@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+
+<meta name="description"
+      content="الرياضيات مع أبو يارا 📚 | نتعلم لنفهم .. نطبق .. لنتفوق ✨ شرح مبسط، تطبيق عملي، ومتابعة مستمرة لطلاب المرحلة الثانوية.">
+
+
+<meta property="og:type" content="website">
+
+<meta property="og:title"
+      content="الرياضيات مع أبو يارا">
+
+<meta property="og:description"
+      content="نتعلم لنفهم .. نطبق .. لنتفوق ✨ شرح مبسط، تطبيق عملي، ومتابعة مستمرة لطلاب المرحلة الثانوية.">
+
+<meta property="og:image"
+      content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/logs.png">
+
+<meta property="og:url"
+      content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+
+<meta property="og:site_name"
+      content="الرياضيات مع أبو يارا">
+
+
+<meta property="og:locale" content="ar_AR">
+
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+      content="الرياضيات مع أبو يارا">
+
+<meta name="twitter:description"
+      content="نتعلم لنفهم .. نطبق .. لنتفوق ✨ شرح مبسط، تطبيق عملي، ومتابعة مستمرة لطلاب المرحلة الثانوية.">
+
+<meta name="twitter:image"
+      content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/logs.png">
+
+    <meta name="keywords" content="الرياضيات مع أبو يارا, الأستاذ عرفات أبو يارا, عرفات أبو يارا, مدرس رياضيات, مدرس رياضيات سوهاج, مدرس رياضيات دار السلام, مدرس رياضيات النغاميش, مدرس رياضيات الخيام, مدرس رياضيات أولاد خلف, رياضيات ابتدائي, رياضيات إعدادي, رياضيات ثانوي, شرح الرياضيات, دروس رياضيات, حل مسائل الرياضيات, مراجعة الرياضيات, تعليم الرياضيات">
+
+
+    <meta name="author" content="  Mazen Mohamed ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta http-equiv="Content-Language" content="ar">
+    <link rel="icon" type="image/png" href="logs.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرياضيات مع أبو يارا</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        html {
+            scroll-behavior: smooth
+        }
+        body {
+            font-family: Tahoma,Arial,sans-serif;
+            background: #f4f7fc;
+            color: #111111;
+            line-height: 1.7
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #042453;
+            color: #fff;
+            box-shadow: 0 3px 15px rgba(0,0,0,.16)
+        }
+        .nav {
+            max-width: 1120px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 22px
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #f7b500;
+            white-space: nowrap
+        }
+        .logo small {
+            display: block;
+            font-size: 11px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 1.4
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            transition: .2s
+        }
+        nav a:hover {
+            color: #f7b500
+        }
+        .hero {
+            background: #fff;
+            color: #18283d;
+            text-align: center;
+            padding: 74px 20px 68px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.25;
+            color: #002079;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            line-height: 1.35;
+            color: #FFD52A;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #000000;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 22px;
+            background: #f7b500;
+            color: #111;
+            text-decoration: none;
+            font-weight: 800;
+            padding: 10px 32px;
+            border-radius: 40px;
+            border: 0;
+        }
+        section {
+            max-width: 1120px;
+            margin: auto;
+            padding: 54px 22px
+        }
+        .title {
+            text-align: center;
+            font-size: 29px;
+            color: #042453;
+            margin-bottom: 28px;
+            font-weight: 800
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 16px
+        }
+        .card {
+            background: #fff;
+            border-radius: 13px;
+            padding: 22px 16px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(4,36,83,.10);
+            border: 1px solid #e8edf4;
+            transition: .2s
+        }
+        .card:hover {
+            transform: translateY(-3px)
+        }
+        .feature-card {
+            min-height: 135px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 12px
+        }
+        .feature-card .icon {
+            font-size: 30px;
+            margin-bottom: 4px
+        }
+        .feature-card h3 {
+            font-size: 17px;
+            color: #042453
+        }
+        .card p {
+            font-size: 14px;
+            color: #111111
+        }
+        #places .card {
+            min-height: 170px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+        #places .icon {
+            font-size: 38px;
+            margin-bottom: 6px
+        }
+        #places h3 {
+            color: #042453;
+            font-size: 20px
+        }
+        .notice {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 13px;
+            padding: 24px;
+            border-top: 4px solid #f7b500;
+            box-shadow: 0 4px 16px rgba(3,31,75,.10);
+            text-align: center
+        }
+        .notice h3 {
+            color: #042453;
+            margin-bottom: 4px
+        }
+        .notice p {
+            color: #111111
+        }
+        .contact {
+            background: #042453;
+            color: #fff;
+            max-width: none
+        }
+        .contact-inner {
+            max-width: 900px;
+            margin: auto;
+            text-align: center
+        }
+        .contact .title {
+            color: #fff
+        }
+        .contact-item {
+            background: #062b5d;
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 10px;
+            padding: 13px;
+            margin: 10px 0
+        }
+        footer {
+            background: #042453;
+            color: #fff;
+            text-align: center;
+            padding: 19px;
+            font-size: 14px
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25d366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 27px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.3);
+            z-index: 200
+        }
+        @media(max-width:760px) {
+            .nav {
+                flex-direction: column;
+                gap: 8px;
+                padding: 11px 14px
+            }
+            .logo {
+                text-align: center;
+                font-size: 20px
+            }
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center
+            }
+            nav a {
+                font-size: 13px
+            }
+            .hero {
+                padding: 58px 15px 54px
+            }
+            .hero h1 {
+                font-size: 34px
+            }
+
+            .hero h2 {
+                font-size: 23px
+            }
+
+            .hero p {
+                font-size: 16px
+            }
+            section {
+                padding: 43px 14px
+            }
+
+            .title {
+                font-size: 27px;
+                margin-bottom: 23px
+            }
+            .grid {
+                grid-template-columns: repeat(2,1fr);
+                gap: 12px
+            }
+            .feature-card {
+                min-height: 125px;
+                padding: 13px 7px
+            }
+            .feature-card h3 {
+                font-size: 15px
+            }
+            #places .card {
+                min-height: 145px
+            }
+        }
+        @media(max-width:420px) {
+            .grid {
+                grid-template-columns: 1fr 1fr
+            }
+            .feature-card {
+                min-height: 118px
+            }
+        }
+    </style>
+    <style>
+        .schedule-container {
+            max-width: 900px;
+            margin: auto
+        }
+        .place-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 16px rgba(4,36,83,.10)
+        }
+        .place-btn,.center-btn,.grade-btn {
+            width: 100%;
+            border: 0;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 800;
+            text-align: right
+        }
+        .place-btn {
+            background: #fff;
+            color: #042453;
+            font-size: 24px;
+            padding: 13px 15px;
+            border-radius: 13px
+        }
+        .place-content {
+            display: none;
+            padding: 12px 0 2px
+        }
+        .center-btn {
+            background: #eaf1fc;
+            color: #042453;
+            font-size: 20px;
+            padding: 14px 16px;
+            border-radius: 13px;
+            margin-top: 8px
+        }
+        .center-content {
+            display: none;
+            padding: 8px 0 0
+        }
+        .grade-btn {
+            background: #eaf1fc;
+            color: #111;
+            font-size: 18px;
+            padding: 13px 16px;
+            border-radius: 13px;
+            margin-top: 9px
+        }
+        .time-box {
+            display: none;
+            background: #fff8df;
+            border-right: 4px solid #f7b500;
+            color: #042453;
+            padding: 12px 16px;
+            margin-top: 7px;
+            border-radius: 10px;
+            font-size: 17px
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                الرياضيات مع أبو يارا<small>خير الناس انفعهم للناس</small>
+            </div>
+            <nav>
+                <a href="#home">الرئيسية</a>
+                <a href="#features">المميزات</a>
+                <a href="#places">المواعيد والسناتر</a>
+                <a href="#contact">تواصل</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>خير الناس أنفعهم للناس</h1>
+            <h2>الرياضيات مع أبو يارا</h2>
+            <p>
+                نتعلم لنفهم .. لنطبق .. لنتفوق
+            </p>
+            <a class="btn" href="#contact">تواصل معنا</a>
+        </section>
+
+        <section id="features">
+            <h2 class="title">المميزات</h2>
+            <div class="grid">
+                <div class="card feature-card">
+                    <div class="icon">
+                        📚
+                    </div>
+                    <h3>شرح بطريقة مبسطة</h3><p>
+                        شرح واضح وسهل يساعد الطالب على الفهم.
+                    </p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">
+                        😄
+                    </div>
+                    <h3>حصة ممتعة وطريفة</h3><p>
+                        أسلوب ممتع يجعل التعلم أكثر تشويقًا.
+                    </p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">
+                        🧠
+                    </div>
+                    <h3>تطبيق عملي</h3><p>
+                        تطبيق ما نتعلمه على المسائل والتدريبات.
+                    </p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">
+                        📈
+                    </div>
+                    <h3>متابعة مستمرة</h3><p>
+                        متابعة مستوى الطالب وتطوره باستمرار.
+                    </p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">
+                        🏆
+                    </div>
+                    <h3>نتائج متميزة</h3><p>
+                        الهدف هو الوصول إلى أفضل مستوى ممكن.
+                    </p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">
+                        ⭐
+                    </div>
+                    <h3>خبرة طويلة</h3><p>
+                        خبرة تساعد على تقديم شرح مناسب للطلاب.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="places">
+            <h2 class="title">المواعيد والسناتر</h2>
+            <div class="schedule-container">
+
+                <div class="place-card">
+                    <button class="place-btn" onclick="toggleSchedule('nagamesh')">🏘️ النغاميش</button>
+                    <div class="place-content" id="nagamesh">
+                        <button class="center-btn" onclick="toggleSchedule('faisal')">🏫 سنتر الأستاذ فيصل</button>
+                        <div class="center-content" id="faisal">
+                            <button class="grade-btn" onclick="showTime('faisal1')">الصف الأول بكالوريا</button>
+                            <div class="time-box" id="faisal1">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('faisal2')">الصف الثاني بكالوريا</button>
+                            <div class="time-box" id="faisal2">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('faisal3')">الصف الثالث الثانوي</button>
+                            <div class="time-box" id="faisal3">
+                                المواعيد: لاحقًا
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place-card">
+                    <button class="place-btn" onclick="toggleSchedule('khayam')">🏘️ الخيام</button>
+                    <div class="place-content" id="khayam">
+                        <button class="center-btn" onclick="toggleSchedule('alamal')">🏫 سنتر الأمل</button>
+                        <div class="center-content" id="alamal">
+                            <button class="grade-btn" onclick="showTime('alamal1')">الصف الأول بكالوريا</button>
+                            <div class="time-box" id="alamal1">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('alamal2')">الصف الثاني بكالوريا</button>
+                            <div class="time-box" id="alamal2">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('alamal3')">الصف الثالث الثانوي</button>
+                            <div class="time-box" id="alamal3">
+                                المواعيد: لاحقًا
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place-card">
+                    <button class="place-btn" onclick="toggleSchedule('awladkhalf')">🏘️ أولاد خلف</button>
+                    <div class="place-content" id="awladkhalf">
+
+                        <button class="center-btn" onclick="toggleSchedule('agyal')">🏫 سنتر الأجيال</button>
+                        <div class="center-content" id="agyal">
+                            <button class="grade-btn" onclick="showTime('agyal1')">الصف الأول بكالوريا</button>
+                            <div class="time-box" id="agyal1">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('agyal2')">الصف الثاني بكالوريا</button>
+                            <div class="time-box" id="agyal2">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('agyal3')">الصف الثالث الثانوي</button>
+                            <div class="time-box" id="agyal3">
+                                المواعيد: لاحقًا
+                            </div>
+                        </div>
+
+                        <button class="center-btn" onclick="toggleSchedule('omda')">🏫 سنتر العمدة</button>
+                        <div class="center-content" id="omda">
+                            <button class="grade-btn" onclick="showTime('omda1')">الصف الأول بكالوريا</button>
+                            <div class="time-box" id="omda1">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('omda2')">الصف الثاني بكالوريا</button>
+                            <div class="time-box" id="omda2">
+                                المواعيد: لاحقًا
+                            </div>
+                            <button class="grade-btn" onclick="showTime('omda3')">الصف الثالث الثانوي</button>
+                            <div class="time-box" id="omda3">
+                                المواعيد: لاحقًا
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="notices">
+            <h2 class="title">الإعلانات والملاحظات</h2>
+            <div class="notice">
+                <h3>📢 لا توجد إعلانات حاليًا</h3>
+                <p>
+                 سيتم بأذن الله بدأ الدراسه يوم 
+                ٩/١٨
+                <br />
+                يرجي احضار اله حاسبه و تحمليها علي الهاتف
+                </p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <h2 class="title">تواصل معنا</h2>
+                <div class="contact-item">
+                    📍 النغاميش – أولاد خلف – الخيام
+                </div>
+                <div class="contact-item">
+                    📞 رقم الهاتف:   01000242135
+                </div>
+                <div class="contact-item">
+                    💬 واتساب :01000242135
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        جميع الحقوق محفوظة © الأستاذ عرفات أبو يارا
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/201000242135" aria-label="واتساب">☏</a>
+    <script>
+        function toggleSchedule(id) {
+            const el = document.getElementById(id);
+            if (!el)return;
+            el.style.display = el.style.display === "block"?"none": "block";
+        }
+        function showTime(id) {
+            const el = document.getElementById(id);
+            if (!el)return;
+            el.style.display = el.style.display === "block"?"none": "block";
+        }
+    </script>
+</body>
+</html>
